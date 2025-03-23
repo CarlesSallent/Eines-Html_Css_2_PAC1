@@ -24,6 +24,21 @@ body {
   margin: 0;
 }
 
+@media (width >= 1024px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      $color-bg-title 0%,
+      $color-bg-title 60%,
+      $color-bg-light 60%,
+      $color-bg-light 100%
+    );
+    background-color: $color-bg-light;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+}
+
 .layout-header__title{
   color: $color-font-light;
   font-family: $font-brand;
@@ -33,7 +48,7 @@ body {
 }
 
 @media (width >= 768px) {
-  .layout-header__title{
+  .layout-header__title {
     font-size: 3.3rem;
   }
 }
@@ -43,7 +58,6 @@ body {
     font-size: 4.4rem;
   }
 }
-
 
 a {
   color: inherit;
@@ -100,7 +114,7 @@ h2 {
   align-items: center;
   column-gap: 2rem;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: auto;
   padding-bottom: 1rem;
 }
@@ -134,38 +148,45 @@ h2 {
   border-radius: 25px 25px 0 0;
   margin-left: .5rem;
   margin-right: .5rem;
-  margin-top: .5rem;
 }
 
 @media (width >= 1024px) {
   .layout-title {
+    background-color: transparent;
     max-width: 1100px;
   }
 }
 
 .layout-image {
   background-color: $color-bg-title;
+  border-radius: 0 0 25px 25px;
   margin-left: .5rem;
   margin-right: .5rem;
 }
 
 @media (width >= 1024px) {
   .layout-image {
+    background-color: transparent;
     max-width: 1100px;
   }
 }
 
-.layout-notes {
-  background-color: $color-bg-title;
-  border-radius: 0 0 25px 25px;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
-} 
-
 @media (width >= 1024px) {
-  .layout-notes {
-    max-width: 1100px;
+  .layout-image__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layout-image__container img {
+    border-radius: 25px;
+    flex: 2;
+    height: auto;
+    margin-left: 1.5rem;;
+    width: 650px;
+  }
+
+   .layout-notes{
+    flex: 1;
   }
 }
 
@@ -259,9 +280,12 @@ h2 {
   }
 }
 
-.layout-footer__container {
+.layout-footer {
   background-color: $color-bg-dark;
   color: $color-font-light;
+}
+
+.layout-footer__container {
   margin: auto;
   padding: 1rem;
 }
