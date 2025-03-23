@@ -14,3 +14,33 @@
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 } )();
+
+//Dependence AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
+
+//Burguer Menu
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('burgerMenu');
+
+  toggle.addEventListener('click', (event) => {
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', (event) => {
+    const isClickInside = menu.contains(event.target) || toggle.contains(event.target);
+    if (!isClickInside) {
+      menu.style.display = 'none';
+    }
+  });
+
+  const menuLinks = menu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.style.display = 'none';
+    });
+  });
+});
