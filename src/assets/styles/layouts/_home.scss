@@ -102,8 +102,13 @@ h2 {
   display: flex;
   justify-content:space-between;
   margin: auto;
-  max-width: 1100px;
   padding-bottom: 1rem;
+}
+
+@media (width >= 1024px) {
+  .layout-header__brand-container {
+    max-width: 1100px;
+  }
 }
 
 .layout-header__logo img {
@@ -130,14 +135,24 @@ h2 {
   margin-left: .5rem;
   margin-right: .5rem;
   margin-top: .5rem;
-  max-width: 1100px;
+}
+
+@media (width >= 1024px) {
+  .layout-title {
+    max-width: 1100px;
+  }
 }
 
 .layout-image {
   background-color: $color-bg-title;
   margin-left: .5rem;
   margin-right: .5rem;
-  max-width: 1100px;
+}
+
+@media (width >= 1024px) {
+  .layout-image {
+    max-width: 1100px;
+  }
 }
 
 .layout-notes {
@@ -146,18 +161,33 @@ h2 {
   margin-bottom: .5rem;
   margin-left: .5rem;
   margin-right: .5rem;
-  max-width: 1100px;
 } 
+
+@media (width >= 1024px) {
+  .layout-notes {
+    max-width: 1100px;
+  }
+}
 
 .layout-title__container {
   margin: auto;
-  max-width: 1100px;
   padding-left: 1rem;
+}
+
+@media (width >= 1024px) {
+  .layout-title__container {
+    max-width: 1100px;
+  }
 }
 
 .layout-image__container {
   margin: 1rem;
-  max-width: 1100px;
+}
+
+@media (width >= 1024px) {
+  .layout-image__container {
+    max-width: 1100px;
+  }
 }
 
 .img-clotxa {
@@ -185,7 +215,6 @@ h2 {
   background-color: $color-bg-light;
   border-radius: 25px;
   margin: .5rem;
-  max-width: 1100px;
   padding: 1rem;
 }
 
@@ -202,13 +231,24 @@ h2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  
+
+  @media (width >= 1024px) {
+    .layout-main__container {
+      max-width: 1100px;
+    }
+  }
+    
   .layout-main__row {
     display: flex;
     gap: .5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    max-width: 1100px;
+  }
+
+  @media (width >= 1024px) {
+    .layout-main__row {
+      max-width: 1100px;
+    }
   }
 
   .layout-main__row .layout-main__container {
@@ -223,8 +263,13 @@ h2 {
   background-color: $color-bg-dark;
   color: $color-font-light;
   margin: auto;
-  max-width: 1100px;
   padding: 1rem;
+}
+
+@media (width >= 1024px) {
+  .layout-footer__container {
+    max-width: 1100px;
+  }
 }
 
 .layout-footer__social {
@@ -304,19 +349,23 @@ h2 {
   text-decoration: none;
 }
 
-.layout-header__nav-list {
-  column-gap: 5rem;  
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  margin: auto;
-  max-width: 1100px;
-  text-transform: uppercase;
+@media (width >= 1024px) {
+  .layout-header__nav-list {
+    column-gap: 5rem;  
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: auto;
+    max-width: 1100px;
+    text-transform: uppercase;
+  }
+
+  .layout-header__nav-list a {
+    text-decoration: none;
+  }
 }
 
-.layout-header__nav-list a {
-  text-decoration: none;
-}
+
 
 
 
