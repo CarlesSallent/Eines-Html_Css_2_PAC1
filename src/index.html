@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <script src="https://kit.fontawesome.com/eb52f37dbb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Secrets de Riba-roja d'Ebre - La Clotxa</title>
   </head>
   <body>
@@ -46,8 +47,8 @@
       </div>
     </section>
     <main class="layout-main">
-      <div class="layout-main__container">
-        <h2 class="layout-main__title">Descripció</h2>
+      <div class="layout-main__container layout-main__container--full">
+        <h2 class="layout-main__title">Un plat amb història i sabor</h2>
         <p class="layout-main__description">
           La clotxa és un dels plats més emblemàtics de Riba-roja d’Ebre, també 
           present a altres pobles de la comarca. Té els seus orígens en la cuina 
@@ -58,50 +59,52 @@
           nostra terra.
         </p>
       </div>
-      <div class="layout-main__container">
-        <h2 class="layout-main__title">Ingredients</h2>
-        <ul class="layout-main__list">
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="100">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Pa rodó (tipus pa de pagès petit)
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="150">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Arengada
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="200">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Tomàquet madur
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="250">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            All
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="300">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Ceba
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="350">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Oli d’oliva verge extra
-          </li>
-          <li class="layout-main__item" data-aos="fade-left" data-aos-delay="400">
-            <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
-            Sal
-          </li>
-        </ul>
+      <div class="layout-main__row">
+        <div class="layout-main__container">
+          <h2 class="layout-main__title">Ingredients</h2>
+          <ul class="layout-main__list">
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="100">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Pa rodó (tipus pa de pagès petit)
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="200">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Arengada
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="300">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Tomàquet madur
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="400">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              All
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="500">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Ceba
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="600">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Oli d’oliva verge extra
+            </li>
+            <li class="layout-main__item" data-aos="fade-in" data-aos-delay="700">
+              <i class="icon fa-solid fa-basket-shopping fa-2xs" style="color: #8f0808;"></i>
+              Sal
+            </li>
+          </ul>
+        </div>
+        <div class="layout-main__container">
+          <h2 class="layout-main__title">Preparació</h2>
+          <p class="layout-main__description">
+            La preparació tradicional d’una bona clotxa comença escalivant els tomàquets,
+            els alls i l’arengada directament al foc. Mentrestant, es parteix un pa rodó 
+            per la meitat i se’n buida la molla amb cura, procurant que surti sencera. 
+            Un cop escalivats els ingredients, es col·loquen dins del pa i s’amaneixen 
+            generosament amb oli d’oliva verge extra. Finalment, es torna a tapar amb 
+            la molla per conservar l’escalfor i el sabor, i ja està llesta per gaudir!
+          </p>
+        </div>   
       </div>
-      <div class="layout-main__container">
-        <h2 class="layout-main__title">Preparació</h2>
-        <p class="layout-main__description">
-          La preparació tradicional d’una bona clotxa comença escalivant els tomàquets,
-          els alls i l’arengada directament al foc. Mentrestant, es parteix un pa rodó 
-          per la meitat i se’n buida la molla amb cura, procurant que surti sencera. 
-          Un cop escalivats els ingredients, es col·loquen dins del pa i s’amaneixen 
-          generosament amb oli d’oliva verge extra. Finalment, es torna a tapar amb 
-          la molla per conservar l’escalfor i el sabor, i ja està llesta per gaudir!
-        </p>
-      </div>   
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

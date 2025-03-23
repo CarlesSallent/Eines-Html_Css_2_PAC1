@@ -212,6 +212,32 @@ h2 {
   text-align: center;
 }
 
+@media (width >= 768px) {
+  .layout-footer__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .layout-footer__author,
+  .layout-footer__attributions{
+    flex: 1;
+  }
+
+  .layout-footer__text {
+    text-align: left;
+  }
+
+  .layout-footer__text-attribution {
+    text-align: right;
+  }
+
+  .layout-footer__separation {
+    display: none;
+  }
+}
+
 
 
 
@@ -225,13 +251,13 @@ h2 {
 }
 
 .burger-menu {
-  display: none;
-  position: absolute;
-  top: 60px; 
-  right: 20px;
   background-color: $color-bg-dark;
-  padding: 10px;
   border-radius: 8px;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 60px; 
   z-index: 1000;
 }
 
