@@ -15,7 +15,7 @@
 
 body {
   background-color: $color-bg-dark;
-  color: $color-font-dark;
+  color: $color-font-dark; 
   display: flex;
   flex-direction: column;
   font-family: $font-body;
@@ -106,19 +106,22 @@ h2 {
   padding-bottom: 1rem;
 }
 
-.layout-header__nav-list {
-  column-gap: 5rem;  
-  display: flex;
-  justify-content: flex-end;
-  margin: auto;
-  max-width: 1100px;
-}
-
 .layout-header__logo img {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
   max-width: 100px;
+}
+
+.layout-overlay {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-overlay__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .layout-title {
@@ -127,12 +130,14 @@ h2 {
   margin-left: .5rem;
   margin-right: .5rem;
   margin-top: .5rem;
+  max-width: 1100px;
 }
 
 .layout-image {
   background-color: $color-bg-title;
   margin-left: .5rem;
   margin-right: .5rem;
+  max-width: 1100px;
 }
 
 .layout-notes {
@@ -141,6 +146,7 @@ h2 {
   margin-bottom: .5rem;
   margin-left: .5rem;
   margin-right: .5rem;
+  max-width: 1100px;
 } 
 
 .layout-title__container {
@@ -202,6 +208,7 @@ h2 {
     gap: .5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    max-width: 1100px;
   }
 
   .layout-main__row .layout-main__container {
@@ -297,7 +304,19 @@ h2 {
   text-decoration: none;
 }
 
+.layout-header__nav-list {
+  column-gap: 5rem;  
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: auto;
+  max-width: 1100px;
+  text-transform: uppercase;
+}
 
+.layout-header__nav-list a {
+  text-decoration: none;
+}
 
 
 
@@ -307,4 +326,16 @@ h2 {
 
 .is-hidden {
   display: none;
+}
+
+@media (width >= 1024px) {
+  .is-hidden{
+    display: block;
+  }
+}
+
+@media (width >= 1024px) {
+  .layout-header__burger-menu{
+    display: none;
+  }
 }
