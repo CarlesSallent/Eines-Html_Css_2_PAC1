@@ -19,6 +19,11 @@
 // @import "@some-company/some-node-module";
 
 /**
+ * Import functions
+ */
+@import 'functions';
+
+/**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */

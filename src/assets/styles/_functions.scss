@@ -1,0 +1,5 @@
+@use "sass:color";
+
+@function lighter-color($color, $percentage) {
+    @return color.mix(white, $color, $percentage);
+}
